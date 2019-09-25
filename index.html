@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <title>
-  <head><base target="_top"> </head> 
-  <body>
-  </body>
-    Toronto's Best Deals
-  </title>
-  <head>
-    <base target="_top">
-  </head>
+  <head><base target="_top"> 
+  <?!= HtmlService.createHtmlOutputFromFile('Firebase').getContent(); ?></head> 
   <body>
     Browse Deals Here, upon purchase recieve $50 from us by providing valid Bill of Sale
+    <!--<div class="container">
+       <div class="tag">Featured</div>
+       <img src="https://firebasestorage.googleapis.com/v0/b/quickstart-1564169439353.appspot.com/o/APD.jpg?alt=media&token=6bb9389e-5569-40e4-9c78-bd776b645b98" height="880px">
+    </div>-->
   </body>
+<style>
+    .container {
+       border: 1px solid #DDDDDD;
+       width: 200px;
+       height: 200px;
+       position: relative;
+    }
+    .tag {
+       float: left;
+       position: absolute;
+       left: 0px;
+       top: 0px;
+       z-index: 1000;
+       background-color: #92AD40;
+       padding: 5px;
+       color: #FFFFFF;
+       font-weight: bold;
+    }
+    </style>
+<!--<div class="container">
+       <div class="tag">Featured</div>
+       <img src="http://www.placehold.it/200x200">
+</div>-->
+
+<script>
+
+ </script>
 </html>
 
