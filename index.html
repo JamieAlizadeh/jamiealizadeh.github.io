@@ -3,8 +3,14 @@
   <head><base target="_top"> 
     <title>
       Best Deal in Toronto
-    </title>
-  <?!= HtmlService.createHtmlOutputFromFile('CarDiv').getContent(); ?></head> 
+    </title> 
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#includedContent").load("CarDiv.html"); 
+    });
+    </script> 
+  </head>
   <body>
     <b>Disclaimer** Not set up yet!</b></br>
   In the meanwhile browse <a href="https://www.performance.ca/vehicles/?view=grid&sc=new&st=asking_price,asc" target="_blank">here</a> for new cars and <a href="https://www.performance.ca/vehicles/?view=grid&sc=used&st=asking_price,asc" target="_blank">here</a> for pre-owned
