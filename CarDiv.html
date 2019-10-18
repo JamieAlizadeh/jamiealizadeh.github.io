@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--<base target="_top"> <?!= HtmlService.createHtmlOutputFromFile('Location').getContent(); ?>-->
+<style>
+.carCell {
+  background-color: grey;
+  color: black;
+  width: 200px;
+  height: 174px;
+  margin: 2px;
+  padding: 12px;
+  border: 2px solid red;
+}
+
+div.carCell:hover {
+  background-color: yellow;
+}
+
+p, h2{
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+div.carCell:hover h2, div.carCell:hover p{
+    opacity: 1;
+}
+
+</style>
+</head>
+<body>
+
+<div class="carCell">
+<h2>London</h2>
+<p id="text1">London is the capital of England.</p>
+</div> 
+
+<div class="carCell">
+<h2>Paris</h2>
+<p>Paris is the capital of France.</p>
+</div>
+
+<div class="carCell">
+<h2>Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+</div>
+
+<div class="carCell">
+<h2>London</h2>
+<p>London is the capital of England.</p>
+</div> 
+
+</body>
+</html>
