@@ -2,6 +2,45 @@
 <html>
 <head>
 <!--<base target="_top"> <?!= HtmlService.createHtmlOutputFromFile('Location').getContent(); ?>-->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-storage.js"></script>
+     <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+    apiKey: "AIzaSyADqkGWe6ZKXW52QTWPeJziMZViU1cymrI",
+    authDomain: "quickstart-1564169439353.firebaseapp.com",
+    databaseURL: "https://quickstart-1564169439353.firebaseio.com",
+    projectId: "quickstart-1564169439353",
+    storageBucket: "quickstart-1564169439353.appspot.com",
+    messagingSenderId: "276541162978",
+    appId: "1:276541162978:web:2aa4043c6c5abfaa2a25bb"
+    };
+    
+    
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    
+    console.log("jamie")
+    console.log(firebase.app().name);
+    
+    var defaultStorage = firebase.storage();
+    var defaultFirestore = firebase.firestore();
+  
+    var storageRef = defaultStorage.ref("APD.jpg");
+    
+    console.log(storageRef.fullPath)
+    
+    var fileUpload = document.getElementById("fileUpload");
+    storageRef.getDownloadURL().then(function(url) {
+    console.log(url);
+    });
+    </script>
+  
 <style>
 .carCell {
   background-color: grey;
