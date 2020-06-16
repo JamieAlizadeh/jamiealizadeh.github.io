@@ -3,14 +3,22 @@
 <body>
   
 <script>
-var arr = ["https://twitter.com/elonmusk/status/1260125310219149312/photo/1",
+var Sky = ["https://twitter.com/elonmusk/status/1260125310219149312/photo/1",
              "https://twitter.com/elonmusk/status/1260125310219149312/photo/1",
              "https://twitter.com/elonmusk/status/1260125310219149312/photo/1"]
 
+var notSky = ["https://twitter.com/elonmusk/status/1260125310219149312/photo/1",
+             "https://twitter.com/elonmusk/status/1260125310219149312/photo/1",
+             "https://twitter.com/elonmusk/status/1260125310219149312/photo/1"]
+             
 var X = Math.random()
-if (X > 0){
-  location.replace(arr[1])
+if (X > .5){
+  location.replace(notDogs[Math.floor(X*3)])
 }
+else {
+  location.replace(notDogs[Math.floor(X*6)])
+}
+
 </script>
 
 </body>
