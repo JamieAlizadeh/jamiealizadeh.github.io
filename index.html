@@ -3,20 +3,20 @@
 <body>
   
 <script>
-var Sky = ["https://twitter.com/elonmusk/status/1260125310219149312/photo/1",
-             "https://twitter.com/elonmusk/status/1260125310219149312/photo/1",
-             "https://twitter.com/elonmusk/status/1260125310219149312/photo/1"]
+var Sky = ["",
+             "https://www.instagram.com/ja_mie.ja/",
+             "https://learn.unity.com/tutorial/quaternion-slerp?uv=2018.4&courseId=5cf06bd1edbc2a58d7fc3209&projectId=5d63ab5eedbc2a002020c801"]
 
-var notSky = ["https://twitter.com/elonmusk/status/1260125310219149312/photo/1",
-             "https://twitter.com/elonmusk/status/1260125310219149312/photo/1",
-             "https://twitter.com/elonmusk/status/1260125310219149312/photo/1"]
+var notSky = ["https://twitter.com/elonmusk/status/1260125310219149312",
+             "https://photos.app.goo.gl/Myyck2VxJhngPYRq5",
+             "https://www.reddit.com/r/dankmemes/comments/c2wzd0/better_than_nudes_tbh/"]
              
 var X = Math.random()
 if (X > .5){
-  location.replace(Sky[Math.floor(X*3)])
+  location.replace(Sky[Math.floor(X*Sky.length)])
 }
 else {
-  location.replace(notSky[Math.floor(X*6)])
+  location.replace(notSky[Math.floor(2*X*notSky.length)])
 }
 
 </script>
