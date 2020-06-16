@@ -2,13 +2,17 @@
 <html>
 <body>
 
-<h2>Redirect to a Webpage</h2>
-<p>The replace() method replaces the current document with a new one:</p>
-
-<button onclick="myFunction()">Replace document</button>
-
+<h2>Redirecting</h2>
+  
 <script>
-  location.replace("https://twitter.com/elonmusk/status/1260125310219149312/photo/1")
+var arr[] = ["https://twitter.com/elonmusk/status/1260125310219149312/photo/1",
+             "https://twitter.com/elonmusk/status/1260125310219149312/photo/1",
+             "https://twitter.com/elonmusk/status/1260125310219149312/photo/1"]
+
+  var X = Math.random()
+if (X > 0.5){
+  location.replace(arr[1])
+}
 </script>
 
 </body>
